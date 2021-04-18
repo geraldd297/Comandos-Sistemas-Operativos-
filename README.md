@@ -13,7 +13,7 @@ Y como ejemplo este comando nos muestra en tiempo real todos los procesos ejecut
 htop: Este un visor de procesos para Linux, similar al comando top, pero más visual para el usuario. 
 Por ejemplo, da la posibilidad de moverse horizontal  y verticalmente, permite una gran multitud de opciones pero de forma más gráfica.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-ps: Muestra una instantánea de los procesos actuales en el sistema. Algunos de sus parámetros son:
+
 
 -e visualiza información sobre "todos" los procesos del sistema.
 
