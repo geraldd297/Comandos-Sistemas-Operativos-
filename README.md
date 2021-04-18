@@ -1,5 +1,5 @@
 # Comandos-Sistemas-Operativos 🚀
-
+Esta es la lista de comandos de Linux vistos en el curso Sistemas Operativos ULACIT.
 
 
 
