@@ -7,8 +7,7 @@ Esta es la lista de comandos de Linux vistos en el curso Sistemas Operativos ULA
 COMANDOS🔧:
 
 
-top: Este comando muestra un resumen del estado del sistema y la lista de procesos que se están ejecutando en el mismo. 
-Y como ejemplo este comando nos muestra en tiempo real todos los procesos ejecutados en la máquina y su consumo.
+Se mencionarán todos los comandos vistos en este curso los cuales fueron de gran importancia y aprendí mucho de ellos en el transcurso del curso.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 htop: Este un visor de procesos para Linux, similar al comando top, pero más visual para el usuario. 
 Por ejemplo, da la posibilidad de moverse horizontal  y verticalmente, permite una gran multitud de opciones pero de forma más gráfica.
