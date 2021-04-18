@@ -9,8 +9,7 @@ COMANDOS🔧:
 
 Se mencionarán todos los comandos vistos en este curso los cuales fueron de gran importancia y aprendí mucho de ellos en el transcurso del curso.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-htop: Este un visor de procesos para Linux, similar al comando top, pero más visual para el usuario. 
-Por ejemplo, da la posibilidad de moverse horizontal  y verticalmente, permite una gran multitud de opciones pero de forma más gráfica.
+Estos comandos se utilizaron para gran cantidad de funcionalidades dentro del Sistema Operativo Linux.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
