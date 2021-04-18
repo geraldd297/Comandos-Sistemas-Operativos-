@@ -11,6 +11,12 @@ Se mencionarán todos los comandos vistos en este curso los cuales fueron de gra
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 Estos comandos se utilizaron para gran cantidad de funcionalidades dentro del Sistema Operativo Linux.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
+top: Este comando muestra un resumen del estado del sistema y la lista de procesos que se están ejecutando en el mismo. 
+Y como ejemplo este comando nos muestra en tiempo real todos los procesos ejecutados en la máquina y su consumo.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+htop: Este un visor de procesos para Linux, similar al comando top, pero más visual para el usuario. 
+Por ejemplo, da la posibilidad de moverse horizontal  y verticalmente, permite una gran multitud de opciones pero de forma más gráfica.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 -e visualiza información sobre "todos" los procesos del sistema.
