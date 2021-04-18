@@ -3,22 +3,22 @@ Esta es la lista de comandos de Linux vistos en el curso Sistemas Operativos ULA
 
 
 Se mencionarán todos los comandos vistos en este curso los cuales fueron de gran importancia y aprendí mucho de ellos en el transcurso del curso.
----------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Estos comandos se utilizaron para gran cantidad de funcionalidades dentro del Sistema Operativo Linux.
----------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 COMANDOS🔧:
 
---------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
 top: Este comando muestra un resumen del estado del sistema y la lista de procesos que se están ejecutando en el mismo. 
 Y como ejemplo este comando nos muestra en tiempo real todos los procesos ejecutados en la máquina y su consumo.
----------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 htop: Este un visor de procesos para Linux, similar al comando top, pero más visual para el usuario. 
 Por ejemplo, da la posibilidad de moverse horizontal  y verticalmente, permite una gran multitud de opciones pero de forma más gráfica.
----------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 -e visualiza información sobre "todos" los procesos del sistema.
@@ -42,7 +42,7 @@ ps -u root -N visualiza todos los procesos que no sean del usuario root.
 
 ps -aux visualiza información detallada de todos los procesos.
 
----------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 kill: Este es un comando que envía una señal de terminación. Su traducción directa es «matar» y prácticamente es lo que hace con los programas sobre los que lo ejecutamos.
 Algunos de los parámetros que tiene el comando kill son:
 
@@ -61,14 +61,14 @@ kill %1 mata el trabajo número 1
 kill -9 $$ sale del shell actual sin guardar el historial de comandos.
 
 kill -3 Salir.
----------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 history: Muestra el historial de todos los comandos utilizados en la terminal. 
 Algunos de sus parámetros son:
 
 History | grep Update: Busca todos los comandos que hayan usado el término “update”.
 
 Es posible que solo deseemos ver una cantidad determinada de comandos ejecutados, por ejemplo, los últimos 7, para ello ingresaremos lo siguiente: history 7
----------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Pstree: Este comando ver el árbol de procesos activos, en nuestros sistemas GNU Linux.
 
 Con el parámetro “-a” , muestra la línea de comandos utilizada. Por ejemplo, si el comando usa la ruta a un fichero de configuración.
@@ -100,13 +100,13 @@ systemd─┬─2*[agetty]
         ├─systemd-logind
         ├─systemd-udevd
         └─thd
----------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Neofetch: Reunirá información el escritorio o servidor. La información que muestre la herramienta dependerá de la distribución que esté ejecutando.
 
----------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Sudo/ sudo su : para permitir que el usuario creado durante la instalación pueda ejecutar todos los comandos de administración.
 
----------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 uname es un programa de Unix y sistemas operativos de tipo Unix que imprime el nombre, versión y otros detalles de la máquina y el sistema operativo que se está ejecutando en ella.
 
 Algunos de sus parámetros son:
@@ -120,7 +120,7 @@ uname -r	Enseña la información del kernel que tenemos en uso en este mismo mom
 uname -v	Se usa para saber la fecha en la que se publicó el kernel que tenemos en uso a este instante
 uname -i	Enseña la plataforma para el hardware, siempre vi que devolviera “unknown”
 uname -a	Este es el más completo de todos los parámetros ya que -a hace referencia a all mostrando toda la información de los anteriores menos -i y -p si son desconocidos.
----------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ls: Por defecto, el comando ls en solitario, listará los archivos y directorios de la ruta (path) en la que se encuentre el usuario.
 
 ls tiene diversos tipos de parámetros:
@@ -152,44 +152,85 @@ Enseña el contenido de todos los subdirectorios de forma recursiva.
 ls -S
 
 Ordena los resultados por tamaño de archivo. 
----------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 mkdir: Este comando es utilzado para crear un nuevo subdirectorio o carpeta en el sistema de archivos. El nombre mkdir de las palabras make subdirectory que quieren decir: crear subdirectorio en inglés.
 
 para crear un directorio con un nombre simple se puede usar por ejemplo mkdir Gerald
----------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 cd:  es usado para en sistemas operativos del tipo UNIX como GNU/Linux para cambiar el directorio de trabajo.
 
 directorio especial .. o directorio padre, dará la posibilidad de mover tantos directorios hacia atrás como directorios padres se tengan. Si el usuario se encuentra en el directorio F del ejemplo y se ejecuta cd .. el usuario se desplazará un directorio hacia atrás, en cambio si desde el directorio F ejecutamos cd ../.. el usuario se moverá 2 directorios hacia atrás.
----------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ip: Muestra todas las interfaces asociadas a la IP address
 Ejemplos: ip -4 addr Parámetros: (i)> enseña y cambia las interfacez de la red, (r): muestra y cambia la tabla de rutas, (n): enseña y cambia objetos cercanos, enseña y cambia protocolos(addr/a)>
----------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 exit: Se utiliza para salir de la terminal que se está ejecutando.
 Parámetros: N/A  
 Ejemplos: $exit
----------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 lsb_release: Muestra una distribución más especifica de la información.
 
 Parámetros:-i;--id: enseña la cadena string del distribuidor.
 Ejemplos:  -v: Muestra la version LSB lsb_release -a,
----------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 clear: Se emplea para eliminar toda la información usada en la terminal y refrescarla.
 
 Parámetros: N/A
----------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 pwd: muestra los directorios de diversos archivos.
 
 Parámetros: -L: muestra el path simbólico, -P: muestra la terminal actual
 
 Ejemplos: /logs$ /bin/pwd
----------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 /home: Hace la redirección al inicio de Linux
----------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Touch: Este comando es empleado para crear un archivo usando un tiempo específico  es un comando usado para crear, cambiar y modificar el tiempo de un documento.  
 Parámetros: -a: puede entrar a algún documento, -c: es usado para crear o no un archivo, -c-d: usado para ingresar y modificar el tiempo, -m: es usado para cambiar la modificación del tiempo.  
 Ejemplos: touch Doc1 
----------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 cat:este comando es empleado para leer archivos sin editarlos, puede  ver, crear, y concatenar documentos. 
 Ejemplos: $cat file 1file2
----------------------------------------------------------------------------------------------------------------------------------------------------------
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+pacman: Es un comando para gestionar paquetes.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ssh: Da comunicación encriptada y segura entre dos sistemas sobre una red que no es segura.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+cat  /proc/meminfo: Sirve para ver el contenido de un archivo, como memoria total, memoria disponible, buffers, etc.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+sudo dmidecode –type 17: Funciona igual que el anterior pero no sirve en una máquina virtual.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+for file in /proc/*/status ; do awk '/VmSwap|Name/{printf $2 " " $3}END{ print ""}' $file; done | sort -k 2 -n -r | lesse: Busca y dice cuales son los procesos que corren al momento en el Swap y cuales utilizan espacio ahí mismo.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+free -h: Muestra memoria disponible, cuánto en uso, cuánto Swap se está utilizando.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+swapon: Dice donde está ubicado un archivo Swap y su peso.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+cat /proc/sys/vm/swappiness: Dice la cantidad de procesos que se utilizan en memoria la RAM y el porcentaje que se usará en el SWAP.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+sudo mkdir /mnt/ram_disk: Sirve para montar una unidad RAM/DISK.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+sudo mount -t tmpfs -o size=1024m new_ram_disk /mnt/ram_disk: Funciona para montar sistemas de archivos en Linux.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+df  -h: Sirve para poder todos los sistemas de archivos corriendo en el equipo.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+apt- get install volatility: Programa qué permite tomar toda la memoria RAM que se tiene,se emplea a nivel forense.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Comandos de Metados de los archivos:
+du -h foto.jpg: Tamaño del archivo.
+stat archivo.jpg: Fecha de creación, último acceso.
+file archivo.jpg: Tipo de archivo ( Carpeta. archivo, acceso directo).
+chown user1 archivo.jpg chmod 777 archivo.jpg: Propietario y grupo, lista de permisos chown.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+df -h : Mostrar el espacio en disco usado.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+/etc/fstab mount /dev/cdrom /mnt: Montaje de dispositivos en el sistema de archivos.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+sudo apt install gparted: Gparted Administra las particiones.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+sudo apt install gnome-disk-utility: Muestra información sobre el disco.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+kill -9 $PID: Matar un proceso
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ps -aux: Mostrar los procesos.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
