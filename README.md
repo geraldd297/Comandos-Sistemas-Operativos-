@@ -1,4 +1,12 @@
-# Comandos-Sistemas-Operativos-
+# Comandos-Sistemas-Operativos 🚀
+
+
+
+
+
+
+
+
 top: Este comando muestra un resumen del estado del sistema y la lista de procesos que se están ejecutando en el mismo. 
 Y como ejemplo este comando nos muestra en tiempo real todos los procesos ejecutados en la máquina y su consumo.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
