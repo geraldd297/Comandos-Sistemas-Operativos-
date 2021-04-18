@@ -2,15 +2,17 @@
 Esta es la lista de comandos de Linux vistos en el curso Sistemas Operativos ULACIT.
 
 
-
-
-COMANDOS🔧:
-
-
 Se mencionarán todos los comandos vistos en este curso los cuales fueron de gran importancia y aprendí mucho de ellos en el transcurso del curso.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 Estos comandos se utilizaron para gran cantidad de funcionalidades dentro del Sistema Operativo Linux.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+COMANDOS🔧:
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 top: Este comando muestra un resumen del estado del sistema y la lista de procesos que se están ejecutando en el mismo. 
 Y como ejemplo este comando nos muestra en tiempo real todos los procesos ejecutados en la máquina y su consumo.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
