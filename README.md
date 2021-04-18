@@ -4,7 +4,7 @@ Esta es la lista de comandos de Linux vistos en el curso Sistemas Operativos ULA
 
 
 
-
+COMANDOS🔧:
 
 
 top: Este comando muestra un resumen del estado del sistema y la lista de procesos que se están ejecutando en el mismo. 
