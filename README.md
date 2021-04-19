@@ -1,10 +1,10 @@
 # Comandos-Sistemas-Operativos 🚀
-Esta es la lista de comandos de Linux vistos en el curso Sistemas Operativos ULACIT.
+Esta es la lista de comandos de Linux vistos en el curso Sistemas Operativos ULACIT.🖥️
 
 
-Se mencionarán todos los comandos vistos en este curso los cuales fueron de gran importancia y aprendí mucho de ellos en el transcurso del curso.
+Se mencionarán todos los comandos vistos en este curso los cuales fueron de gran importancia y aprendí mucho de ellos en el transcurso del curso.🖥️
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Estos comandos se utilizaron para gran cantidad de funcionalidades dentro del Sistema Operativo Linux.
+Estos comandos se utilizaron para gran cantidad de funcionalidades dentro del Sistema Operativo Linux.🖥️
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 COMANDOS🔧:
