@@ -234,3 +234,38 @@ kill -9 $PID: Matar un proceso
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ps -aux: Mostrar los procesos.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+bash –version: Sirve para observar la versión instalada de bash en la pc.
+Ejemplo:GNU bash, versión 4.4.19(1)-release (x86_64-suse-linux-gnu)
+Copyright (C) 2016 Free Software Foundation, Inc.
+Licencia GPLv3+: GPL de GNU versión 3 o posterior <http://gnu.org/licenses/gpl.html>
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+hostname: Este se encarga de establecer o mostrar el nombre del sistema además de obtener información de este.
+Ejemplo: root@halo8000:~# hostname halo8000 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Parámetros:
+-	hostname --fqdn: Da información de el FQDN (Nombre de Dominio Completamente Especificado)
+-	-	hostname -i: Da la información de la IP del nodo del equipo.
+-	hostname -f: Da el nombre del nodo completo con dominio en el DNS.
+-	hostname -a: Da información de los alias del nodo.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+apt: Gestionar paquetes en Linux.
+-	list - lista los paquetes dependiendo de los nombres
+-	search - este parametro busca en las descripciones de los paquetes
+-	show - muestra información del paquete 
+-	install - instala paquetes
+-	remove - elimina paquetes
+-	autoremove - Elimina automáticamente todos los paquetes sin uso.
+-	update - actualiza la lista de paquetes disponibles
+-	upgrade - actualiza el sistema instalando.
+-	full-upgrade - actualiza el sistema eliminando/instalando/actualizando los paquetes.
+-	edit-sources - este edita el fichero de información de fuentes
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+echo: para ver la versión de Shell instalada
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+cat/ = cat /etc/shells: Ver los shells instalados.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+zsh: Interprete para comandos tipo Unix.---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+chmod: Chmod +x script.sh = le otorga permisos de ejecutar a script.sh
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+8.	ls -l: ver permisos otorgados
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
