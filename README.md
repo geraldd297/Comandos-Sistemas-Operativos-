@@ -105,7 +105,9 @@ Neofetch: Reunirá información el escritorio o servidor. La información que mu
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Sudo/ sudo su : para permitir que el usuario creado durante la instalación pueda ejecutar todos los comandos de administración.
-
+Ejemplo: gerald@stretch:~$sudo su - gerald
+password for gerald:
+gerald@stretch: ~$
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 uname es un programa de Unix y sistemas operativos de tipo Unix que imprime el nombre, versión y otros detalles de la máquina y el sistema operativo que se está ejecutando en ella.
 
@@ -115,20 +117,38 @@ uname -s	Enseña el tipo de nucleo, por ejemplo Linux
 uname -p	Enseña el tipo del procesador, en caso de no conocerse mostrará “unknown”
 uname -m	Enseña la arquitectura del procesador: x86 para 32 bits y x86_64 para 64 bits
 uname -n	Enseña el nombre que le hemos dado al equipo para la red, si no lo cambiamos será el que le dimos en la instalación de nuestra distribución. Este nombre se toma de /etc/hostname por lo que se puede cambiar en este archivo
-uname -o	Devuelve el Sistema Operativo que estamos usando, suele detectar como GNU/Linux en las distribuciones que he comprobado
+uname -o	Devuelve el Sistema Operativo que estamos usando, suele detectar como GNU/Linux en las distribuciones comprobadas
 uname -r	Enseña la información del kernel que tenemos en uso en este mismo momento, si reiniciamos y usamos otro kernel cambiará al ejecutar este comando
 uname -v	Se usa para saber la fecha en la que se publicó el kernel que tenemos en uso a este instante
 uname -i	Enseña la plataforma para el hardware, siempre vi que devolviera “unknown”
 uname -a	Este es el más completo de todos los parámetros ya que -a hace referencia a all mostrando toda la información de los anteriores menos -i y -p si son desconocidos.
+
+Ejemplo: 
+
+uname -a
+
+Salida:
+
+Linux ns899.servidoresadmin.com 3.14.32-xxxx-grs-ipv6-64 #9 SMP Thu Oct 20 14:53:52 CEST 2016 x86_64 GNU/Linux
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ls: Por defecto, el comando ls en solitario, listará los archivos y directorios de la ruta (path) en la que se encuentre el usuario.
 
+Ejemplo: 0001.pcap Escritorio Descargas index.html install.log.syslog Fotos Plantillas
+Documentos anaconda-ks.cfg fbcmd_update.php install.log Music Videos Públicos
 ls tiene diversos tipos de parámetros:
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ls -a
 
 Este comando enseña los archivos y directorios dentro del directorio actual, incluye los archivos y directorios ocultos.
 
+Ejemplo: . .bashrc Documentos .gconfd Install.log .nautilus .pulse en cookies
+.. .cache Descargas .gnome2 install.log.syslog .netstat.swp .recently-used.xbel
+0001.pcap .config .elinks .gnome2_private .kde .opera .spice-vdagent
+anaconda-ks.cfg .cshrc .esd_auth .gtk-marcadores .libreoffice Fotos .tcshrc
+.bash_history .dbus .fbcmd .gvfs .local .pki Plantillas
+.bash_logout escritorio fbcmd_update.php .ICEauthority .mozilla Videos Públicos
+.bash_profile .digrc .gconf index.html Música .pulse .wireshark
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ls -t
 
  Este comando ordena los archivos por fecha de modificación.
@@ -153,9 +173,18 @@ ls -S
 
 Ordena los resultados por tamaño de archivo. 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-mkdir: Este comando es utilzado para crear un nuevo subdirectorio o carpeta en el sistema de archivos. El nombre mkdir de las palabras make subdirectory que quieren decir: crear subdirectorio en inglés.
+mkdir: Este comando es utilizado para crear un nuevo subdirectorio o carpeta en el sistema de archivos. El nombre mkdir de las palabras make subdirectory que quieren decir: crear subdirectorio en inglés.
+
+Ejemplo:
 
 para crear un directorio con un nombre simple se puede usar por ejemplo mkdir Gerald
+
+[code] mkdir myfiles [/code]
+Crea un nuevo directorio llamado myfiles en el directorio actual.
+
+
+
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 cd:  es usado para en sistemas operativos del tipo UNIX como GNU/Linux para cambiar el directorio de trabajo.
 
@@ -193,6 +222,21 @@ cat:este comando es empleado para leer archivos sin editarlos, puede  ver, crear
 Ejemplos: $cat file 1file2
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 pacman: Es un comando para gestionar paquetes.
+
+parámetros:
+
+pacman -Syu: Actualiza el sistema y el software instalado.
+pacman -Syuu: Este comando forza la actualización de la base de datos y actualiza todo.
+pacman -Ss [paquete]: Busca un paquete con alguna palabra clave.
+pacman -Qs [paquete]: Busca un paquete ya instalado.
+pacman -S [paquete1]  [paquete2]: Instala varios paquetes.
+pacman -Sw paquete: Descarga un paquete sin instalarlo.
+pacman -R paquete: Desintala un paquete.
+pacman -Qdt: Busca archivos huérfanos.
+paccache -r: Borra cache de paquetes menos los tres más recientes.
+pacman -Sc: Borra cache de paquetes que ya no están instalados.
+pacman -Scc: Borrar toda la cache de paquetes.
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ssh: Da comunicación encriptada y segura entre dos sistemas sobre una red que no es segura.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -264,7 +308,8 @@ echo: para ver la versión de Shell instalada
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 cat/ = cat /etc/shells: Ver los shells instalados.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-zsh: Interprete para comandos tipo Unix.---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+zsh: Interprete para comandos tipo Unix.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 chmod: Chmod +x script.sh = le otorga permisos de ejecutar a script.sh
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 8.	ls -l: ver permisos otorgados
