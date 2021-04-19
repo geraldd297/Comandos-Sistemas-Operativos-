@@ -226,15 +226,25 @@ pacman: Es un comando para gestionar paquetes.
 parámetros:
 
 pacman -Syu: Actualiza el sistema y el software instalado.
+
 pacman -Syuu: Este comando forza la actualización de la base de datos y actualiza todo.
+
 pacman -Ss [paquete]: Busca un paquete con alguna palabra clave.
+
 pacman -Qs [paquete]: Busca un paquete ya instalado.
+
 pacman -S [paquete1]  [paquete2]: Instala varios paquetes.
+
 pacman -Sw paquete: Descarga un paquete sin instalarlo.
+
 pacman -R paquete: Desintala un paquete.
+
 pacman -Qdt: Busca archivos huérfanos.
+
 paccache -r: Borra cache de paquetes menos los tres más recientes.
+
 pacman -Sc: Borra cache de paquetes que ya no están instalados.
+
 pacman -Scc: Borrar toda la cache de paquetes.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
