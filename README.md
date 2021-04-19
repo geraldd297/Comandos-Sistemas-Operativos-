@@ -249,18 +249,50 @@ pacman -Scc: Borrar toda la cache de paquetes.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ssh: Da comunicación encriptada y segura entre dos sistemas sobre una red que no es segura.
+
+Ejemplo: 
+
+[usuario1@localhost usuario1]$ ssh usuario1@servidor.dominio.es
+[usuario1@servidor usuario1]$ echo $DISPLAY
+localhost:11.0
+[usuario1@servidor usuario1]$ gerald&
+[usuario1@servidor usuario1]$
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 cat  /proc/meminfo: Sirve para ver el contenido de un archivo, como memoria total, memoria disponible, buffers, etc.
+
+Ejemplo:
+# cat /proc/meminfo
+MemTotal:       483488 kB
+MemFree:          9348 kB
+Buffers:          6796 kB
+Cached:         168292 kB
+Etc...
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 sudo dmidecode –type 17: Funciona igual que el anterior pero no sirve en una máquina virtual.
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 for file in /proc/*/status ; do awk '/VmSwap|Name/{printf $2 " " $3}END{ print ""}' $file; done | sort -k 2 -n -r | lesse: Busca y dice cuales son los procesos que corren al momento en el Swap y cuales utilizan espacio ahí mismo.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 free -h: Muestra memoria disponible, cuánto en uso, cuánto Swap se está utilizando.
+
+Ejemplo: 
+
+             total       used       free     shared    buffers     cached
+Mem:       1021628     912548     109080          0     120368     655548
+-/+ buffers/cache:     136632     884996
+Swap:      4194296          0    4194296
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 swapon: Dice donde está ubicado un archivo Swap y su peso.
+
+Ejemplo: 
+
+/dev/hda8        none swap        sw     0     0 /swapfile        none        swap        sw     0 0
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 cat /proc/sys/vm/swappiness: Dice la cantidad de procesos que se utilizan en memoria la RAM y el porcentaje que se usará en el SWAP.
+
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 sudo mkdir /mnt/ram_disk: Sirve para montar una unidad RAM/DISK.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -289,9 +321,11 @@ kill -9 $PID: Matar un proceso
 ps -aux: Mostrar los procesos.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 bash –version: Sirve para observar la versión instalada de bash en la pc.
-Ejemplo:GNU bash, versión 4.4.19(1)-release (x86_64-suse-linux-gnu)
-Copyright (C) 2016 Free Software Foundation, Inc.
-Licencia GPLv3+: GPL de GNU versión 3 o posterior <http://gnu.org/licenses/gpl.html>
+
+Ejemplo:
+
+GNU bash, versión 4.4.19(1)-release (x86_64-suse-linux-gnu)
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 hostname: Este se encarga de establecer o mostrar el nombre del sistema además de obtener información de este.
 Ejemplo: root@halo8000:~# hostname halo8000 
